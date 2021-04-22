@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+	<title>Sign Language Interactive Site</title>
+	<meta name="viewport" content= "width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="interactive_site.css">
+</head>
+<body>
+	<main>
+
+		<ul class="nav">
+		  <li class="letter-a"><a class="link" href="#a">A</a></li>
+		  <li class="letter-b"><a class="link" href="#b">B</a></li>
+		  <li class="letter-c"><a class="link" href="#c">C</a></li>
+		  <li class="letter-d"><a class="link" href="#d">D</a></li>
+		  <li class="letter-e"><a class="link" href="#e">E</a></li>
+		  <li class="letter-f"><a class="link" href="#f">F</a></li>
+		  <li class="letter-g"><a class="link" href="#g">G</a></li>
+		  <li class="letter-h"><a class="link" href="#h">H</a></li>
+		  <li class="letter-i"><a class="link" href="#i">I</a></li>
+		  <li class="letter-j"><a class="link" href="#j">J</a></li>
+		  <li class="letter-k"><a class="link" href="#k">K</a></li>
+		  <li class="letter-l"><a class="link" href="#l">L</a></li>
+		  <li class="letter-m"><a class="link" href="#m">M</a></li>
+		  <li class="letter-n"><a class="link" href="#n">N</a></li>
+		  <li class="letter-o"><a class="link" href="#o">O</a></li>
+		  <li class="letter-p"><a class="link" href="#p">P</a></li>
+		  <li class="letter-q"><a class="link" href="#q">Q</a></li>
+		  <li class="letter-r"><a class="link" href="#r">R</a></li>
+		  <li class="letter-s"><a class="link" href="#s">S</a></li>
+		  <li class="letter-t"><a class="link" href="#t">T</a></li>
+		  <li class="letter-u"><a class="link" href="#u">U</a></li>
+		  <li class="letter-v"><a class="link" href="#v">V</a></li>
+		  <li class="letter-w"><a class="link" href="#w">W</a></li>
+		  <li class="letter-x"><a class="link" href="#x">X</a></li>
+		  <li class="letter-y"><a class="link" href="#y">Y</a></li>
+		  <li class="letter-z"><a class="link" href="#z">Z</a></li>
+		</ul>
+
+		<ul class="img">
+		  <li id="" class="active">
+			  <img src="images/blank.png">
+			  <p>Start learning the ASL Alphabet by clicking the letters!</p>
+		  </li>
+          <li id="a"><img src="a.jpg"></li>
+		  <li id="b"><img src="b.jpg"></li>
+		  <li id="c"><img src="c.jpg"></li>
+      <li id="d"><img src="d.jpg"></li>
+      <li id="e"><img src="e.jpg"></li>
+      <li id="f"><img src="f.jpg"></li>
+		  <li id="g"><img src="g.jpg"></li>
+		  <li id="h"><img src="h.jpg"></li>
+		  <li id="i"><img src="i.jpg"></li>
+		  <li id="j"><img src="j.gif"></li>
+		  <li id="k"><img src="k.jpg"></li>
+		  <li id="l"><img src="l.jpg"></li>
+		  <li id="m"><img src="m.jpg"></li>
+		  <li id="n"><img src="n.jpg"></li>
+		  <li id="o"><img src="o.jpg"></li>
+		  <li id="p"><img src="p.jpg"></li>
+		  <li id="q"><img src="q.jpg"></li>
+		  <li id="r"><img src="r.jpg"></li>
+		  <li id="s"><img src="s.jpg"></li>
+		  <li id="t"><img src="t.jpg"></li>
+		  <li id="u"><img src="u.jpg"></li>
+		  <li id="v"><img src="v.jpg"></li>
+		  <li id="w"><img src="w.jpg"></li>
+		  <li id="x"><img src="x.jpg"></li>
+		  <li id="y"><img src="y.jpg"></li>
+		  <li id="z"><img src="z.gif"></li>
+         <!-- ...and so on-->
+		</ul>
+
+
+
+	</main>
+
+
+<!--First the jQuery library link:-->
+<script src="jquery-3.6.0.min.js"></script>
+
+<!--Below the script for the image-switch:-->
+ <script>
+    $('.nav a').click(function() {
+	const id = $(this).attr('href');
+  $(id).addClass('active').siblings().removeClass('active');
+});
+</script>
+
+<!--Below the script for the color change in the nav. I'm pretty sure the 2 scripts could be combined:-->
+<script>
+$(function() {
+   var links = $('a.link').click(function() {
+       links.removeClass('activecolor');
+       $(this).addClass('activecolor');
+   });
+});
+</script>
+
+</body>
+</html>

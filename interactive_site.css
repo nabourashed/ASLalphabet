@@ -1,0 +1,292 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/*CSS Rest:*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+
+
+
+
+
+body {
+	font-family: "Didot";
+}
+
+.nav {
+	float: left;
+    font-size: 18vw;
+    margin-left: 17%;
+}
+
+a {
+	text-decoration: none;
+}
+
+a, a:visited { color: lightgrey; }
+a.link.activecolor { color: black; }
+
+p {
+	font-family: "Avenir";
+	font-size: 1vw;
+	padding-top: 328px;
+	padding-bottom: 328px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.img {
+  /* list-style: none; */
+	border: 1px solid black;
+	padding: 20px;
+	float: right;
+	position: fixed;
+    width: 40%;
+    top: 50%;
+    margin-top: -21.2%;
+    right: 12%;
+}
+li {
+    position: relative;
+}
+li p {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    margin: 0px;
+    padding: 0px;
+}
+
+.img li {
+	display: none;
+}
+
+.img li.active {
+	display: block;
+}
+
+.letter-a {
+    font-size: 22vw;
+}
+
+.letter-b {
+    font-size: 15vw;
+    margin: -10vw 0px 0px 15vw;
+}
+
+.letter-c {
+    font-size: 15vw;
+    margin: -9vw 0px 0px -1vw;
+}
+
+.letter-d {
+    font-size: 25vw;
+    margin: -10vw 0px 0px 7vw;
+}
+
+.letter-e {
+    font-size: 15vw;
+    margin: -12vw 0px 0px -1vw;
+}
+
+.letter-f {
+    font-size: 10vw;
+    margin: -7vw 0px 0px 10vw;
+}
+
+.letter-g {
+    font-size: 10vw;
+    margin: -5vw 0px 0px 3vw;
+}
+
+.letter-h {
+    font-size: 20vw;
+    margin: -7.5vw 0px 0px 10vw;
+}
+
+.letter-i {
+    font-size: 25vw;
+    margin: -15vw 0px 0px 3vw;
+}
+
+.letter-j {
+    font-size: 10vw;
+    margin: -10vw 0px 0px 11vw;
+    position: relative;
+    z-index: 2;
+}
+
+.letter-k {
+    font-size: 15vw;
+    margin: -13vw 0px 0px 15vw;
+    position: relative;
+    z-index: 3;
+}
+
+.letter-l {
+    font-size: 20vw;
+    margin: -13vw 0px 0px -4vw;
+}
+
+.letter-m {
+    font-size: 15vw;
+    margin: -10vw 0px 0px 11vw;
+}
+
+.letter-n {
+    font-size: 10vw;
+    margin: -7vw 0px 0px 3vw;
+}
+
+.letter-o {
+    font-size: 25vw;
+    margin: -7vw 0px 0px 7vw;
+}
+
+.letter-p {
+    margin: -15vw 0px 0px -3vw;
+}
+
+.letter-q {
+	font-size: 10vw;
+    margin: -10vw 0px 0px 5vw;
+}
+
+.letter-r {
+    font-size: 25vw;
+    margin: -2vw 0px 0px -3vw;
+}
+
+.letter-s {
+    font-size: 15vw;
+    margin: -27vw 0px 0px 12vw;
+}
+
+.letter-t {
+    font-size: 23vw;
+    margin: -3vw 0px 0px 12vw;
+}
+
+.letter-u {
+    font-size: 13vw;
+    margin: -12vw 0px 0px 3vw;
+}
+
+.letter-v {
+    font-size: 10vw;
+    margin: -5vw 0px 0px 12vw;
+}
+
+.letter-w {
+    font-size: 16vw;
+    margin: -8vw 0px 0px -5vw;
+}
+
+.letter-x {
+    font-size: 15vw;
+    margin: -10vw 0px 0px 13vw;
+}
+
+.letter-y {
+    font-size: 18vw;
+    margin: -8vw 0px 0px 3vw;
+}
+
+.letter-z {
+    font-size: 25vw;
+    margin: -13vw 0px 0px 11vw;
+}
+
+@media only screen and (max-width: 1020px) {
+  /* For phones: */
+  .img {
+    /* list-style: none; */
+  	padding: 10px;
+    width: 50%;
+    margin-top: -30%;
+    right: 10%;
+  }
+
+  p {
+  	font-size: 2vw;
+  	padding-top: 250px;
+  	padding-bottom: 250px;
+  }
+
+  .nav {
+      margin-left: 8%;
+  }
+
+
+}
+
+@media only screen and (max-width: 500px) {
+  /* For phones: */
+  .img {
+    /* list-style: none; */
+  	padding: 10px;
+    width: 45%;
+    top: 50%;
+    margin-top: -30%;
+    right: 10%;
+  }
+
+  p {
+  	font-size: 2vw;
+  	padding-top: 100px;
+  	padding-bottom: 100px;
+  }
+
+  .nav {
+      margin-left: 10%;
+  }
+
+}
